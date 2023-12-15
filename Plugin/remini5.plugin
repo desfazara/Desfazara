@@ -1,0 +1,10 @@
+#!name = Remini Pro
+#!desc = Buka Kunci Langganan Premium
+#!icon = https://raw.githubusercontent.com/lailaazmi/Lailaazmi/master/Plugin/icons/remini.png
+#!author = Lailaazmi
+
+[Script]
+http-response ^https?:\/\/api\.pico\.bendingspoonsapps\.com\/v4\/events$ requires-body=1,script-path=https://raw.githubusercontent.com/lailaazmi/Lailaazmi/master/Json/remini3.js
+
+[MITM]
+hostname = api.pico.bendingspoonsapps.com

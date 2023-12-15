@@ -1,0 +1,13 @@
+var obj = JSON.parse($response.body); 
+ obj['is_free'] = false;
+ obj['subscription_valid'] = true;
+ obj['active_subscriptions'] = "com.bigwinepot.nwdn.international.1w_t20_1w";
+ obj['is_subscribed'] = true;
+ obj['is_pro'] = true;
+ obj['paywall_hit'] = true;
+ obj['auto_renew_enabled'] = true;
+ obj['expiration_date'] = '2995-05-7T04:31:45Z';
+ obj['is_trial'] = false;
+ obj['status'] = "ok";
+ obj['processing_count'] = 0;
+$done({body: JSON.stringify(obj)});

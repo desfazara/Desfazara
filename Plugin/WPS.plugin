@@ -1,0 +1,11 @@
+#!name = Wps Office
+#!desc = WPS Buka Keanggotaan Lokal
+#!icon = https://raw.githubusercontent.com/deezertidal/private/main/icons/wps.png
+#!author = Lailaazmi
+
+[Script]
+http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips requires-body=1,script-path=https://raw.githubusercontent.com/lailaazmi/Lailaazmi/master/Json/wps2.js
+http-response ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) requires-body=1,script-path=https://raw.githubusercontent.com/lailaazmi/Lailaazmi/master/Json/wps2.js
+
+[MITM]
+hostname = *.docer.wps.cn, vipapi.wps.cn, account.wps.cn
